@@ -36,3 +36,17 @@ hdmi_cvt=800 480 60 6 0 0 0
 ```
 
 Link to Adafruit instructions: https://learn.adafruit.com/adafruit-5-800x480-tft-hdmi-monitor-touchscreen-backpack/raspberry-pi-config
+
+## Expanding Filesystem
+We want to have all of the SD card file system available to the RPI and this may not be enabled by default.
+1. From Menu, select Preferences, and then Raspberry Pi Configuration.
+2. On the System tab, click Expand Filesystem.
+3. From Menu, select Shutdown and then Reboot.
+
+## Connect to WiFi
+Use the wifi icon in the upper right corner to connect your RPI to a wifi access point.
+
+## Command Line Shell
+Linux and Mac users just use the normal Terminal application. I used a Mac on this project even though I'm a Windows user. :) 
+Windows users can try the GIT Bash tool (git is built into Linux and Mac terminal shells).
+https://git-scm.com/downloads
