@@ -18,7 +18,20 @@ I’m documenting this from a beginner perspective and I hope this will help other
 
 # Setting up the Raspberry Pi
 
-## Downloading and Burning a New Image 
-My RPI3 is running Raspbien Jessie with PIXEL but you could also just use NOOBS that comes with the SD card. If you want to update:
+## (Optional) Downloading and Burning a New Image 
+My RPI3 is running Raspbian Jessie with PIXEL but you could also just use NOOBS that comes with the SD card. If you want to update:
 1. Download the image: https://www.raspberrypi.org/downloads/raspbian/
-2. Follow the instructions to install the OS image. 
+2. Follow the instructions to install the OS image.
+
+## (Optional) Mini Display 480x800 Pixels
+The RPI3 isn't going to display by default on the 5 inch monitor (if you ordered it and are using it) without first updating the config file. To update the config file you will need to insert the card into your host computer and edit as follows:
+<code>
+# uncomment if hdmi display is not detected and composite is being output
+hdmi_force_hotplug=1
+
+# uncomment to force a specific HDMI mode (here we are forcing 800x480)
+hdmi_group=2
+hdmi_mode=87
+hdmi_cvt=800 480 60 6 0 0 0
+</code>
+Link to Adafruit instructions: https://learn.adafruit.com/adafruit-5-800x480-tft-hdmi-monitor-touchscreen-backpack/raspberry-pi-config
