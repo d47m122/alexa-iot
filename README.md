@@ -25,7 +25,7 @@ My RPI3 is running Raspbian Jessie with PIXEL but you could also just use NOOBS 
 
 ## (Optional) Mini Display 480x800 Pixels
 The RPI3 isn't going to display by default on the 5 inch monitor (if you ordered it and are using it) without first updating the config file. To update the config file you will need to insert the card into your host computer and edit as follows:
-<code>
+```
 # uncomment if hdmi display is not detected and composite is being output
 hdmi_force_hotplug=1
 
@@ -33,5 +33,6 @@ hdmi_force_hotplug=1
 hdmi_group=2
 hdmi_mode=87
 hdmi_cvt=800 480 60 6 0 0 0
-</code>
+```
+
 Link to Adafruit instructions: https://learn.adafruit.com/adafruit-5-800x480-tft-hdmi-monitor-touchscreen-backpack/raspberry-pi-config
